@@ -1,0 +1,24 @@
+body {
+	margin: 20px;
+}
+
+.icon-dot {
+	width: 20px;
+	height: 20px;
+	//background: image-url('icon/group.png');
+	//@include icon-sprite('dot');
+	@include fancy-hover(icon, dot, dot_hover, 0.5s);
+}
+
+.box {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	transition: background-color 2s ease-out;
+}
+.box:hover {
+  background-color: green;
+  cursor: pointer;
+
+}
+
