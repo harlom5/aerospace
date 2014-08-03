@@ -1,0 +1,597 @@
+/***********************************************************************************************
+Theme Name: Aerospace Materials Processing
+Theme URI: http://www.premecha.com
+Description: This is the theme for the Aerospace Materials Processing website.
+Version: 1.0
+Author: Theme designed and developed by Michelle O'Reilly - Red & Robin. michelle@redandrobin.com.au
+
+/********************************************************************************************* 
+
+v.1.0
+
+*********************************************************************************************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/********************************************************************************************* 
+
+General reset of styles for cross browser compatibility
+
+*********************************************************************************************/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+ol,
+ul {list-style: none;}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    margin: 0;
+    font: 14px/1.286 Arial, Helvetica, sans-serif;
+    color: #808080;
+    background:#121212 url(../images/bg-body.jpg) repeat-x 50% 0;
+    min-width:1000px;
+}
+img {border-style: none;}
+a {
+    text-decoration:none;
+    color: #3a81b0;
+}
+a:hover,
+a.hover {color:#2198e6;}
+form,
+fieldset {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
+input,
+textarea,
+select {
+    font: 100% Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+}
+input[type=submit]:hover{cursor:pointer;}
+
+h1, h2, h3, h4 , h5 {
+    font-family:Lucida Sans Unicode, Lucida Grande, sans-serif!important;
+     }
+
+#nav {      
+    font-family:Lucida Sans Unicode, Lucida Grande, sans-serif!important;
+ }
+
+/********************************************************************************************* 
+
+General settings, Header, Navigation
+
+*********************************************************************************************/
+
+
+#wrapper{
+    width:980px;
+    margin:0 auto;
+    padding-bottom:50px;
+}
+/* header */
+#header{
+    height:1%;
+    padding:49px 5px 24px 0;
+}
+#header:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+.logo{
+    margin:0 0 0 -8px;
+    width:220px;
+    height:137px;
+    overflow:hidden;
+    float:left;
+    background:url(../images/sprite.png) no-repeat;
+    text-indent:-9999px;
+}
+.logo a{
+    height:100%;
+    display:block;
+}
+#header .holder{
+    float:right;
+    width:724px;
+    padding:28px 0 0;
+}
+.slogan{
+    display:block;
+    text-align:right;
+    background:url(../images/bg-slogan.gif) no-repeat 100% 100%;
+    color:#8899a5;
+    font:11px/16px Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+    padding:0 2px 22px;
+    margin:0 0 21px;
+}
+#header .frame{
+    height:1%;
+    overflow:hidden;
+    padding:0 14px 0 0;
+}
+/* search-form */
+.search-form{
+    float:right;
+    background:url(../images/sprite.png) no-repeat 0 -142px;
+    width:250px;
+}
+.search-form .row{
+    height:1%;
+    overflow:hidden;
+    padding:3px 9px;
+}
+.search-form .submit{
+    float:left;
+    margin:6px 5px 0 0;
+}
+.search-form .text{
+    float:left;
+    padding:4px 3px;
+    margin:0;
+    border:0;
+    width:208px;
+    color:#9ab6c4;
+    font:13px Arial, Helvetica, sans-serif;
+    text-shadow: 0 1px 0 #1b2a35;
+    background:none;
+}
+/* nav */
+#nav{
+    float:right;
+    font-size:15px;
+     text-transform:uppercase;
+    text-shadow:1px 0 0 #101c25;
+}
+#nav li{
+    float:left;
+    margin:0 12px 0 0;
+}
+#nav a{
+    float:left;
+    color:#fff;
+    background:url(../images/sprite-bg.png) no-repeat -9999px -9999px;
+    padding:0 15px 0 0;
+}
+#nav span{
+    float:left;
+    background:url(../images/sprite-bg.png) no-repeat -9999px -9999px;
+    padding:6px 2px 6px 17px;
+}
+#nav .home{
+    text-indent:-9999px;
+    overflow:hidden;
+    display:block;
+    background:url(../images/sprite.png) no-repeat -226px 3px;
+    width:15px;
+    height:20px;
+}
+#nav a:hover,
+#nav .active a{
+    background-position:100% -39px;
+    color:#fff;
+    cursor:pointer;
+}
+#nav a:hover span,
+#nav .active span{
+    background-position:0 0;
+    color:#fff;
+}
+/* main */
+#main{
+    width:100%;
+    margin-bottom:45px;
+}
+
+
+/********************************************************************************************* 
+
+Homepage banner 
+
+*********************************************************************************************/
+
+.banner{
+    position:relative;
+    border:7px solid #fff;
+    margin:0 0 26px;
+}
+.banner img{display:block;}
+.banner .text{
+    position:absolute;
+    top:62px;
+    left:54px;
+    width:350px;
+}
+#main .banner h1{
+    margin:0 0 28px;
+    color:#000;
+    font:30px/36px;
+    text-transform:uppercase;
+}
+/* link */
+.link {
+    height:1%;
+    overflow:hidden;
+    margin:0 0 29px;
+}
+.link a{
+    float:left;
+    font:bold 16px/20px Arial, Helvetica, sans-serif;
+    background:url(../images/sprite-bg.png) no-repeat 100% -129px;
+    padding:0 45px 0 0;
+    color:#fafafa !important;
+    text-shadow:0 2px 0 rgba(0,0,0,0.2);
+}
+.link span{
+    background:url(../images/sprite-bg.png) no-repeat 0 -74px;
+    float:left;
+    padding:12px 17px 15px 30px;
+}
+.link a:hover span{text-decoration:underline;}
+
+
+/********************************************************************************************* 
+
+homepage columns
+
+*********************************************************************************************/
+
+
+.columns{
+    width:100%;
+    overflow:hidden;
+    background:url(../images/bg-column.gif) repeat-y 323px 0;
+}
+.columns .holder{
+    width:1200px;
+    overflow:hidden;
+    padding:21px 0 35px 21px;
+}
+/* columns .column */
+.columns .column{
+    float:left;
+    width:270px;
+    margin:0 54px 0 0;
+}
+.columns .column:first-child{margin:0 74px 0 0;}
+#main .columns h2{
+    margin:0 0 16px;
+    color:#215c84;
+    font-size:18px;
+    text-transform:uppercase;
+    height:1%;
+    overflow:hidden;
+}
+.columns h2 span{
+    float:left;
+    padding:0 30px 0 0;
+    background:url(../images/iocns.png) no-repeat -9999px -9999px;
+}
+.columns h2 .about{background-position:100% 3px;}
+.columns h2 .news{background-position:100% -82px;}
+.columns h2 .contact{
+    background-position:100% -178px;
+    color:#e85150;
+    padding:0 25px 0 0;
+}
+#main .columns p{margin:0 0 8px;}
+.column .email{
+    width:243px;
+    padding:12px 5px;
+    display:block;
+    background:url(../images/shadow.png);
+    text-align:center;
+    color:#e85150 !important;
+    margin:19px 0 0;
+}
+.column .email:hover{text-decoration:underline;}
+.main-holder{
+    border:8px solid #f2f2f2;
+    background:#fff;
+    padding:38px 34px 33px 45px;
+}
+.main-frame{
+    background:url(../images/separator2.gif) repeat-y 661px 0;
+    height:1%;
+    overflow:hidden;
+    position:relative;
+    padding:0 0 104px;
+}
+/* content */
+#content{
+    float:left;
+    width:640px;
+    color:#323030;
+    font:15px/22px Arial, Helvetica, sans-serif;
+}
+#main h1{
+    margin:0 0 20px;
+    color:#215c84;
+    font:30px/36px Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+}
+#main h2{
+    margin:0 0 20px;
+    color:#e85150;
+    font:25px/28px Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+}
+#main .team h2{margin:0 0 33px;}
+#main h3{
+    margin:0 0 17px;
+    color:#505050;
+    font:18px/20px Arial, Helvetica, sans-serif;
+}
+#main ul{
+    margin:0 0 10px;
+    padding:0 0 0 18px;
+    list-style:none;
+}
+#main p{margin:0 0 14px;}
+#main ul li{
+    background:url(../images/bullet.gif) no-repeat 0 5px;
+    padding:0 0 4px 26px;
+}
+
+#main a:hover{
+    text-decoration:underline;
+    }
+
+/* team */
+.team{padding:36px 10px 0 0;}
+.team .holder{
+    height:1%;
+    overflow:hidden;
+    padding:0 0 0 4px;
+}
+.team .photo{
+    float:left;
+    margin:0 29px 0 0;
+}
+.team .photo img{
+    display:block;
+    border:1px solid #c6c6c6;
+}
+.team .text{
+    height:1%;
+    overflow:hidden;
+}
+/* top */
+.top{
+    position:absolute;
+    bottom:0;
+    left:604px;
+    text-indent:-9999px;
+    overflow:hidden;
+    background:url(../images/sprite.png) no-repeat -227px -21px;
+    width:23px;
+    height:24px;
+}
+/* sidebar */
+#sidebar{
+    float:right;
+    width:189px;
+    font:14px/20px Arial, Helvetica, sans-serif;
+}
+#main #sidebar h3{margin:0 0 17px;}
+#sidebar .link span{padding:10px 33px 15px 27px;}
+
+/********************************************************************************************* 
+
+footer
+
+*********************************************************************************************/
+
+#footer{
+    height:1%;
+    overflow:hidden;
+    background:url(../images/bg-footer.gif) repeat-x;
+    color:#4e5051;
+    font:12px/16px Arial, Helvetica, sans-serif;
+    padding:27px 6px 33px 19px;
+}
+#footer p{margin:0;}
+#footer ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    float:right;
+}
+#footer ul li{
+    float:left;
+    background:url(../images/separator.gif) no-repeat 0 3px;
+    padding:0 8px 0 9px;
+}
+#footer ul li:first-child{background:none;}
+#footer ul a{color:#4e5051;}
+#footer ul a:hover{text-decoration:underline;}
+
+
+/******************************
+Contour cotact form styles
+******************************/
+
+#contour
+{
+  padding: 20px 0px 6px 0px;
+}
+#contour .contourPageName
+{
+  font-size: 1.5em !important;
+  line-height: 2em !important;
+}
+
+#contour .contourField div label
+{
+  display: inline;
+}
+
+#contour label.fieldLabel
+{
+  //font-weight: bold;
+  font:0.83em/1.428 Arial,Helvetica,sans-serif;
+  display: block;
+  width: 100px;
+  float: left;
+  clear: left;
+  background: transparent !important;
+}
+#contour small
+{
+  display: block;
+  float: left;
+  clear: both;
+  padding: 5px 5px 5px 200px;
+}
+
+
+#contour fieldset
+{
+  padding:1.4em 0 1.4em;
+  margin: 0 0 1.5em 0;
+  border: none !Important;
+}
+
+
+#contour legend
+{
+  /*font-weight: bold;*/
+  font-size: 1.0em;
+  line-height: 1.2em;
+  display: block;
+  width: 425px;
+  word-wrap: break-word;  
+}
+
+
+#contour input.text, #contour input.title, #contour textarea, #contour select
+{
+  //margin: 0.5em 0;
+  //border: 1px solid #bbb;
+  height: 16px;
+  font:0.83em/1.428 Arial,Helvetica,sans-serif;
+  //float: left;
+}
+#contour input.text:focus, #contour input.title:focus, #contour textarea:focus, #contour select:focus
+{
+  border: 1px solid #666;
+}
+#contour input.text, #contour textarea
+{
+  width: 400px !important;
+  padding: 5px;
+}
+#contour textarea
+{
+  height: 100px;
+}
+
+#contour input.fileupload
+{
+  height: auto !important;
+}
+
+#contour span.checkboxlist, #contour span.radiobuttonlist, #contour span.checkbox
+{
+  display: block;
+  float: left;
+  padding: 10px;
+}
+
+#contour .checkboxlist input, #contour .radiobuttonlist input, #contour .checkbox input
+{
+  width: auto !important;
+  height: auto !important;
+  border: none !important;
+  display: inline !important;
+}
+
+#contour .hiddenfield
+{
+    display:none;
+}
+
+#contour .contourButton
+{
+  font-family: verdana;
+  font-size: 12px;
+  border: 1px solid #39464b;
+  margin-right: 10px;
+  padding: 2px 10px;
+}
+#contour .contourErrorMessage
+{
+  padding: .8em;
+  margin-bottom: .5em;
+  border: 2px solid #FBC2C4;
+  font:0.83em/1.428 Arial,Helvetica,sans-serif;
+}
+#contour .contourErrorMessage, #contour .contourError
+{
+  background: #FBE3E4;
+  color: #8a1f11;
+  font:0.83em/1.428 Arial,Helvetica,sans-serif;
+}
+#contour input.contourError, #contour textarea.contourError
+{
+  background: #FBE3E4;
+  border-color: #FBC2C4;
+}
+
+#contour span.contourError
+{
+  color: #8a1f11 !important;
+  background: transparent !important;
+}
+
+#contour .contourValidationSummary
+{
+  color: #8a1f11 !important;
+}
+
+
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

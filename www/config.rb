@@ -5,7 +5,7 @@ http_path = "/"
 css_dir = "css"
 sass_dir = "sass"
 images_dir = "images"
-javascripts_dir = "javascripts"
+javascripts_dir = "js"
 
 #General
 output_style = :expanded
